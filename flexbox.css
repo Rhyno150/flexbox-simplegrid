@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ line-height: 1.6; 
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.intro img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+.city img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.language table {
+
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.language th, .language td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.subject {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.historic-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.place {
+
+    margin-bottom: 20px;
+}
+
