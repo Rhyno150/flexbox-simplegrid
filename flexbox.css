@@ -1,66 +1,138 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    width: 90%;
+    padding: 1em;
+    background-color: palegoldenrod;
 }
 
-body {
- font-family: Arial, sans-serif;
- line-height: 1.6; 
+p{
+    line-height: 30px;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px 0;
+hr{
+    margin: 2em auto;
+    height: 2px;
+    background-color: black;
+    border: 1px solid gray;
 }
 
-.intro img {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
 
+.profilePic{
+    border-radius: 15em;
+    width: 18em;
+}
+.contactIcon{
+    border-radius: 13em;
 }
 
-.city img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-
+.istImage{
+    width: 80%;
 }
 
-.language table {
+.cityDescription{
+    flex: 1;
+    line-height: 30px;
+}
 
+.tableLanguage, tr, th, td{
+    border: 1px solid black;
+}
+
+.tableLanguage{
     width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
 }
-.language th, .language td {
-padding: 10px;
-border: 1px solid #ddd;
+#webText,
+.favSubjects{
+    text-align: center;
 }
-.subjects {
+.btnContainer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
 }
-.subject {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-
+.flexButton{
+    margin-bottom: 15px;
 }
 
-.historic-places {
+/*favourite subjects styling*/
+.subjectImg,
+.subjectImg01,
+.subjectImg02{
+    width: 90%;
+} 
+
+.bodyBackground,
+.Intro{
+    color: black;
+    background-image: url(table\ mountain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        background: url('table\ mountain.jpg') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;`
+        text-align: center;
+        margin: auto;
+        
+}
+
+.placeInfo{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex: 2;
 }
-.place {
-
-    margin-bottom: 20px;
+.placePic{
+    margin-right: 5px;
+    flex: 1;
+}
+.myFooter{
+    margin-top: 60px;
 }
 
+#desktopPic{
+    display: none;
+}
+
+#mobilePic{
+    display: inline-block;
+}
+
+
+@media (min-width:760px){
+    .Intro, 
+    .contactDetails,
+    .city,
+    .histFlex,
+    .subjects{
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+    }
+    .placeInfo{
+        display: flex;
+        flex: 3;
+    }
+    .placePic{
+        margin-right: 5px;
+        flex: 1;
+    }
+    .cityPI{
+        flex: 1;
+    }
+
+    #mobilePic{
+        display: none;
+    }
+
+    #desktopPic{
+        display: inline-block;
+    }
+}

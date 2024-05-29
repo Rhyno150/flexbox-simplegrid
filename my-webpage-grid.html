@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.which-city, .historical-places, .favourite-subjects {
+    display: grid;
+    gap: 20px;
+}
+
+.which-city img, .historical-places img, .favourite-subjects img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .which-city {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .historical-places, .favourite-subjects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Which City Section -->
+        <div class="which-city">
+            <img src="which-city.jpg" alt="Which City">
+            <div class="which-city-text">
+                <h2>Which City</h2>
+                <p>Description about the city.</p>
+            </div>
+        </div>
+
+        <!-- Historical Places Section -->
+        <div class="historical-places">
+            <img src="historical-places.jpg" alt="Historical Places">
+            <div class="historical-places-text">
+                <h2>Historical Places</h2>
+                <p>Description about historical places.</p>
+            </div>
+        </div>
+
+        <!-- Favourite Subjects Section -->
+        <div class="favourite-subjects">
+            <img src="favourite-subjects.jpg" alt="Favourite Subjects">
+            <div class="favourite-subjects-text">
+                <h2>Favourite Subjects</h2>
+                <p>Description about favourite subjects.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
